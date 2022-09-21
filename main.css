@@ -3,6 +3,7 @@
     --grey: #cfd0d3;
     --purple: #4900B2FF;
     --light: #EEE;
+    --ping: #ba03ff
 
 }
 *{
@@ -29,6 +30,10 @@ body{
     padding: 0;
 }
 
+.table_th{
+    width: 40px;
+
+}
 .form_popup{
     height: 50%;
     opacity: 0;
@@ -80,4 +85,14 @@ body{
     width: 100%;
     display: block;
     transition: 0.4s;
+}
+
+
+.note-item {
+    background: #fff;
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
+    height: 80%;
 }
