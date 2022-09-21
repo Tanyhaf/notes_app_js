@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+<header>
+    <h1>Notes</h1>
+</header>
+
+<form id="form" action="" method="post" class="form_popup">
+    <label class="form_label">Name</label>
+    <input id="GET-name"
+           type="text"
+           name="name"
+           class="form_input">
+    <label class="form_label">Content</label>
+    <input id="GET-content"
+           type="text"
+           name="content"
+           class="form_input">
+    <label class="form_label">Dates</label>
+    <input id="GET-data"
+           type="date"
+           name="data"
+           class="form_input">
+
+    <label class="form_label">Categoty</label>
+    <select id="GET-category">
+        <option value="TaskThought">TaskThought</option>
+        <option value="Random">Random</option>
+        <option value="Idea">Idea</option>
+    </select>
+
+    <input
+            id="inp_save"
+            type="submit"
+            value="Save">
+</form>
+
+<table class="table">
+    <tr class="table_row">
+        <th>Name</th>
+        <th>Created</th>
+        <th>Category</th>
+        <th>Content</th>
+        <th>Date</th>
+        <th><img src="src/img/icons8-архив-50.png" alt="archive" style="width:30px;height:30px"></th>
+        <th><img src="src/img/icons8-удалить-навсегда-24.png" alt="delete"></th>
+    </tr>
+    <tr>
+        <!--<th>
+            <input  value="Name"
+                    type="text"
+                    class="content_text">
+        </th>
+        <th>
+        <input
+                value="Category"
+                type="text"
+                class="content_text">
+        </th>
+        <th>
+        <input
+                value="Content"
+                type="text"
+                class="content_text">
+        </th>
+
+        <th>
+        <input
+                value="Date"
+                type="text"
+                class="content_text">
+        </th>
+        !-->
+    </tr>
+</table>
+
+
+
+<section id="notes_list" class="notes_list">
+
+    <button id="btn_create_note" onclick="setOpen()">Create note</button>
+
+
+    <div id="notes">
+
+        <div class="content">
+
+        </div>
+        <div>
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
